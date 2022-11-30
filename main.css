@@ -39,7 +39,7 @@ img{
     display: block;
         /* Centres the image */
     width: 150px;
-    margin: 0 auto;
+    margin: 25px;
     margin-bottom: 40px;
 
     /* line 39-42: THIS IS THE MOST FOOLPROOF WAY OF CENTRING ANY ELEMENT */
@@ -51,7 +51,7 @@ img{
 p{
     margin: 0 auto;
         /* 0 auto makes it centred horizontally and doesn't touch vertical alignment */
-    width: 50%;
+    /* width: 50%; */
         /* percentage of the whole page that the box takes up */ 
     border: 0px solid magenta;
     padding: 10px;
@@ -78,4 +78,13 @@ a:hover, a:active{
 .intro {
     /* Apply styling to a specific class */
     margin-bottom: 40px;
+}
+
+/* This gets your div boxes next to each other: */
+.container{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 65%;
 }
