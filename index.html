@@ -16,7 +16,12 @@
     <!-- Meta = information about a page that would show up on a Google search -->
     <title>David Cheng</title>
     <!-- This defines what the tab is called in your browser -->
+    <link rel="stylesheet" href="main.css" />
+<!-- !!!LINK HTML and CSS files!!! -->
 </head>
+
+<!-- ------------------------------------------------------------------------------------------------------------------------------------ -->
+
 <body>
     <!-- Everything people see goes in the Body section. -->
 <!-- ----------------------------------------------------ABOUT SECTION---------------------------------------------------- -->
@@ -24,19 +29,22 @@
     <!--    h1 = Heading 1: biggest heading type. They go from h1-h6.-->
     <!--    strong = BOLD -->
     <!--    em = ITALIC -->
-<img src="./Me.JPG" alt="Picture of me" width="150"/>
+    
+<img src="./Me.JPG" alt="Picture of me" />
     <!--    To insert a picture: put it in the same Finder folder as the .html file. In this case: /Documents/GitHub/daffiid.github.io/ -->
     <!--        Use jpg/png formates. TIFs take very long to load -->
     <!--        No spaces in the file name -->
     <!--    src = Source: where the image is located -->
     <!--    alt = Alternate: if the image is broken, this text will show -->
     <!--    width & height = Dimensions. If you specificy one, it will retain aspect ratio. If you specify both, it will streth it.-->
-<p>I am a <a href="https://www.tudelft.nl/onderwijs/opleidingen/masters/dfi/msc-design-for-interaction" target="_blank">Design for Interaction</a> student at the Industrial Design Engineering faculty of Delft University of Technology, the Netherlands.
+        <!-- you can add width="150" after the alt="". BUT IT'S BETTER TO DEFINE THE SIZE IN THE CSS FILE. -->
+<p class="intro">I am a <a href="https://www.tudelft.nl/onderwijs/opleidingen/masters/dfi/msc-design-for-interaction" target="_blank">Design for Interaction</a> student at the Industrial Design Engineering faculty of Delft University of Technology, the Netherlands.
 
     During my design projects, I have found myself most at home in <strong>interaction design</strong>, system design, and <em>aesthetics</em>. I am also interested in sustainability, having dedicated my Minor to this.
     Through my work, I have found that the why behind a design is important to me, as well as making things accessible and intuitive. I value and pursue simplicity and meaning.</p>
     <!--     p = Paragraph: simplest text content thing -->
-<p>
+    <!--    p class="...": used to make different subtypes of Paragraph, so that you can apply different styling to each one. -->
+<p class="intro">
 <!-- ----------------------------------------------------LINKS SECTION---------------------------------------------------- -->
     <strong>//</strong>
     <a href="./Portfolio.pdf" target="_blank"> PORTFOLIO</a>    
@@ -52,6 +60,9 @@
             <!-- target = Open link in a new tab  -->
     <strong>//</strong>
 </p>
+
+<p>
+    <a href="./Portfolio.pdf" target ="_blank"> <img src="./BEPthumb.jpg" alt="Picture of me" width="150"/></a></p>
 </body>
 </html>
     <!-- ^ ends html code - usually nothing after this -->

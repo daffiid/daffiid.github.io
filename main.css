@@ -1,0 +1,81 @@
+/* !!!MAKE SURE TO LINK TO THE CSS FILE IN THE HTML HEAD */
+/* CSS: { } curly brackets. HTML: < > */
+
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+    /* Import fonts: AT TOP OF FILE because it will be read top-to-bottom. */
+
+
+body{
+    /* CSS goes here */
+    background-color: #393E41;
+        /* 256 basic colours have words. Otherwise use HEX, RGB, or HSB */
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+        /* Specify the font for the entire page */
+    font-size: 17pt;
+        /* You can use pixels (px) or points (pt). Just be consistent. */
+    letter-spacing: 1.75px;
+    color: #F6F7EB;
+        /* Font colour */
+    
+    
+}
+
+h1{
+    font-size: 80pt;
+    
+
+    margin: auto;
+        /* makes things even */
+    width: 75%;
+        /* percentage of the whole page that the box takes up */ 
+    border: 0px solid magenta;
+    padding: 10px;
+
+    text-align: center;
+        /* You can also use JUST text-align without using the box made by lines 27-32 if you want*/
+}
+
+img{
+    display: block;
+        /* Centres the image */
+    width: 150px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+
+    /* line 39-42: THIS IS THE MOST FOOLPROOF WAY OF CENTRING ANY ELEMENT */
+   
+    border-radius: 50%;
+        /* round image */
+}
+
+p{
+    margin: 0 auto;
+        /* 0 auto makes it centred horizontally and doesn't touch vertical alignment */
+    width: 50%;
+        /* percentage of the whole page that the box takes up */ 
+    border: 0px solid magenta;
+    padding: 10px;
+    text-align: justify;
+}
+
+a{
+    /* To change link look: line 62-64. To change link look but change colour when hovering: line 68-74.*/
+    /* color: #44BBA4; */
+    /* text-decoration: none; */
+        /* Remove link underline */
+
+}
+    /* Link states: a:link, a:visited, a:hover: a:active */
+a:link, a:visited {
+    color:#44BBA4;
+    text-decoration: none;
+    }
+a:hover, a:active{
+    color:#3F88C5;
+    text-decoration: none;
+    }
+
+.intro {
+    /* Apply styling to a specific class */
+    margin-bottom: 40px;
+}
